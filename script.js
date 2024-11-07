@@ -12,6 +12,8 @@ function savePost() {
    localStorage.setItem("title", document.getElementById("title").value);
    localStorage.setItem("content", document.getElementById("content").value);
    localStorage.setItem("image", document.getElementById("image").value);
+
+   window.location.href = 'index.html';
 }
 
 function loadPosts() {
