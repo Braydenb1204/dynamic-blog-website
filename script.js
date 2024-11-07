@@ -5,7 +5,6 @@ const title = document.getElementById("title");
 const content = document.getElementById("content");
 const image = document.getElementById("image");
 
-
 const postButton = document.getElementById("post-btn"); //registers post button
 postButton.addEventListener("click", savePost);
 
@@ -21,8 +20,15 @@ function loadPosts() {
    document.getElementById("image-display").innerHTML = localStorage.getItem("image")
 }
 
-const deleteButton = document.getElementById("delete");
-deleteButton.addEventListener("click", delPost);
+const delButton = document.getElementById("delete");
+delButton.addEventListener("click". delPost)
+
+function delPost() { 
+   localStorage.removeItem("title");
+   localStorage.removeItem("content");
+   
+   
+}
 
 
 
